@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.userInfo-card:hover span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #cdd5e0);
+  animation: animate-1 2s linear infinite;
+}
+
+.userInfo-card.active span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #cdd5e0);
+  animation: animate-1 2s linear infinite;
+}
+
+@keyframes animate-1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.userInfo-card:hover span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #cdd5e0);
+  animation: animate-2 2s linear infinite;
+}
+
+.userInfo-card.active span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, #cdd5e0);
+  animation: animate-2 2s linear infinite;
+}
+
+@keyframes animate-2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.userInfo-card:hover span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to left, transparent, #cdd5e0);
+  animation: animate-3 2s linear infinite;
+}
+
+.userInfo-card.active span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to left, transparent, #cdd5e0);
+  animation: animate-3 2s linear infinite;
+}
+
+@keyframes animate-3 {
+  0% {
+    transform: translatex(100%);
+  }
+  100% {
+    transform: translatex(-100%);
+  }
+}
+
+.userInfo-card:hover span:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, #cdd5e0);
+  animation: animate-4 2s linear infinite;
+}
+
+.userInfo-card.active span:nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, #cdd5e0);
+  animation: animate-4 2s linear infinite;
+}
+
+@keyframes animate-4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
