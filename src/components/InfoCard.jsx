@@ -11,9 +11,8 @@ function InfoCard({ title, contain, name, setSection = null, section }) {
 
   return (
     <div
-      className={`userInfo-card flex h-max w-full flex-wrap items-center overflow-hidden rounded-lg bg-customNavyBlue--dark p-4 text-xs shadow-md shadow-[#5548A3] ${section ? 'active' : null} ${!contain || title == 'Ubicación' ? null : 'cursor-pointer'}`}
+      className={`userInfo-card relative flex h-max w-full flex-wrap items-center overflow-hidden rounded-lg bg-customNavyBlue--dark p-4 text-xs shadow-md shadow-[#5548A3] ${section ? 'active' : null} ${!contain || title == 'Ubicación' ? null : 'cursor-pointer'}`}
       onClick={handleClick}
-      data-aos='zoom-in'
     >
       <span></span>
       <span></span>

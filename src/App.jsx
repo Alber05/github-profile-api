@@ -9,7 +9,7 @@ import Followers from './Sections/Followers'
 import Following from './Sections/Following'
 
 function App() {
-  const [user, setUser] = useState('github')
+  const [user, setUser] = useState('alber05')
   const [userData, setUserData] = useState({})
   const [repos, setRepos] = useState([])
   const [followers, setFollowers] = useState([])
